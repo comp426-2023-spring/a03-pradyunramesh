@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-
+//Import all packages
 import { rps } from '../lib/rpsls.js';
 import minimist from "minimist";
 const argv = minimist(process.argv.slice(2));
 if (argv.h || argv.help){
+    //Help documentation
     console.log('Usage: node-rps [SHOT]' +
     'Play Rock Paper Scissors (RPS)' +
     '' +
@@ -18,6 +19,7 @@ if (argv.h || argv.help){
      process.exit(0);
 }
 if (argv.r || argv.rules) {
+    //Rules documentation
     console.log('Rules for Rock Paper Scissors:' + 
     '' +
     '- Scissors CUTS Paper' +
@@ -25,6 +27,7 @@ if (argv.r || argv.rules) {
     '- Rock CRUSHES Scissors');
     process.exit(0);
 }
+//Try-catch block for error handling
 try{
     let result = rps(argv._[0]);
     console.log(JSON.stringify(result));
