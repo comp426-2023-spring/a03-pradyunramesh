@@ -16,7 +16,7 @@ if (argv.h || argv.help){
     '                  e.g. {"player":"rock"}' + 
      ' node-rps rock   Return JSON with results for RPS played against a simulated opponent.'+
      '                 e.g {"player":"rock","opponent":"scissors","result":"win"}');
-     process.exit(0);
+     process.exit(0); //Exit successfull
 }
 if (argv.r || argv.rules) {
     //Rules documentation
@@ -25,7 +25,7 @@ if (argv.r || argv.rules) {
     '- Scissors CUTS Paper' +
     '- Paper COVERS Rock' +
     '- Rock CRUSHES Scissors');
-    process.exit(0);
+    process.exit(0); //Exit process successfully
 }
 //Try-catch block for error handling
 try{
