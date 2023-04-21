@@ -31,7 +31,7 @@ if (argv.r || argv.rules) {
 try{
     let result = rps(argv._[0]);
     console.log(JSON.stringify(result));
-    process.exit(0);
+    process.exit(0); //Exit successfully
 }
 catch(error){
     if (error instanceof RangeError){
@@ -52,6 +52,6 @@ catch(error){
         '- Scissors CUTS Paper' +
         '- Paper COVERS Rock' +
         '- Rock CRUSHES Scissors');
-        process.exit(1);
+        process.exit(1); //Exit with error code
     }
 }
