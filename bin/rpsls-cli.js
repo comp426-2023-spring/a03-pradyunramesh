@@ -53,6 +53,7 @@ catch(error){
         '                    e.g. {"player":"rock"}' +
         '  node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.' +
         '                    e.g {"player":"rock","opponent":"Spock","result":"lose"}');
+        //Display rules
         console.log('Rules for the Lizard-Spock Expansion of Rock Paper Scissors:' +
         ''+
         '- Scissors CUTS Paper'+
