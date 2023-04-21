@@ -16,7 +16,7 @@ if(argv.h || argv.help){
     '                    e.g. {"player":"rock"}' +
     '  node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.' +
     '                    e.g {"player":"rock","opponent":"Spock","result":"lose"}');
-    process.exit(0);
+    process.exit(0); //Exit successfully
 }
 if(argv.r || argv.rules) {
     //Rules documentation
