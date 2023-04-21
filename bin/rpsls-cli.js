@@ -38,7 +38,7 @@ if(argv.r || argv.rules) {
 try{
     const result = rpsls(argv._[0]);
     console.log(JSON.stringify(result));
-    process.exit(0);
+    process.exit(0); //Exit successfully
 }
 catch(error){
     if (error instanceof RangeError){
@@ -66,6 +66,6 @@ catch(error){
         '- Paper DISPROVES Spock' +
         '- Spock VAPORIZES Rock' +
         '- Rock CRUSHES Scissors');
-        process.exit(1);
+        process.exit(1); //Exit with error
     }
 }
